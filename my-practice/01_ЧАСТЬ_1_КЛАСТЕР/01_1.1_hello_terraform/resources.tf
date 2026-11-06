@@ -26,6 +26,8 @@ resource "local_file" "routing_summary" {
     summary_json = jsonencode(local.routing_summary)
   })
 
+  
+
   depends_on = [
     # Сводку создаём после двух человекочитаемых файлов. Это учебный пример
     # явной зависимости; обычные ссылки на атрибуты строят её автоматически.
